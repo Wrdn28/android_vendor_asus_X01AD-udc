@@ -2592,7 +2592,6 @@ PRODUCT_PACKAGES += \
     TimeService \
     QtiTelephonyService \
     embms \
-    imssettings \
     uceShimService \
     dpmserviceapp \
     ims \
