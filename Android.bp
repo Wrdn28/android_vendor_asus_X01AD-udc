@@ -35559,19 +35559,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "android.hardware.biometrics.fingerprint@2.1-service.X01AD",
-	owner: "asus",
-	srcs: ["proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.X01AD"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "android.hardware.bluetooth@1.0-service-qti",
 	owner: "asus",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti"],
