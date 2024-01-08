@@ -4027,26 +4027,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.fingerprint@1.0",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.iop@1.0",
 	owner: "asus",
 	strip: {
@@ -32196,24 +32176,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "cdfinger.default",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/cdfinger.default.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "cdfinger.fingerprint.default",
 	owner: "asus",
 	strip: {
@@ -32222,24 +32184,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/cdfinger.fingerprint.default.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	relative_install_path: "hw",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "fingerprint.msm8953",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/hw/fingerprint.msm8953.so"],
 		},
 	},
 	compile_multilib: "64",

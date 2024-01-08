@@ -441,7 +441,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bt_channel_avoidance@1.0 \
     vendor.qti.hardware.data.latency@1.0_vendor \
-    vendor.qti.hardware.fingerprint@1.0 \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
     vendor.qti.hardware.qdutils_disp@1.0 \
@@ -2095,9 +2094,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice@2.2_vendor \
     com.qualcomm.qti.uceservice@2.0_vendor \
     com.qualcomm.qti.uceservice@2.1_vendor \
-    cdfinger.default \
     cdfinger.fingerprint.default \
-    fingerprint.msm8953 \
     fingerprint.focaltech.default \
     lib-imsSDP \
     lib-imscmservice \
