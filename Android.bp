@@ -522,11 +522,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
@@ -561,11 +564,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
@@ -600,11 +606,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/gatekeeper.msm8953.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/gatekeeper.msm8953.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
@@ -618,11 +627,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/hw/keystore.msm8953.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/keystore.msm8953.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	relative_install_path: "hw",
 	prefer: true,
@@ -1248,11 +1260,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libQSEEComAPI.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libQSEEComAPI.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
@@ -2085,11 +2100,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterdeviceutils.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libkeymasterdeviceutils.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
@@ -2102,11 +2120,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterprovision.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libkeymasterprovision.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
@@ -2119,11 +2140,14 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libkeymasterutils.so"],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libkeymasterutils.so"],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
@@ -2861,6 +2885,26 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqtigef.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqtikeymaster4",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqtikeymaster4.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqtikeymaster4.so"],
 		},
 	},
 	compile_multilib: "both",
@@ -35627,6 +35671,19 @@ cc_prebuilt_binary {
 	name: "android.hardware.keymaster@3.0-service-qti",
 	owner: "asus",
 	srcs: ["proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti"],
+	check_elf_files: false,
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	soc_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "android.hardware.keymaster@4.0-service-qti",
+	owner: "asus",
+	srcs: ["proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti"],
 	check_elf_files: false,
 	strip: {
 		none: true,
