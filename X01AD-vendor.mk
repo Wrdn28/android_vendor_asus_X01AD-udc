@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libQSEEComAPI \
     libQTEEConnector_vendor \
+    libRSDriver_adreno \
     libSubSystemShutdown \
     libacdb-fts \
     libacdbloader \
